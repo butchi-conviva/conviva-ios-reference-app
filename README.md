@@ -1,4 +1,4 @@
-# **You wanna contribute to this project?**
+# **Wanna contribute to this project?**
 
 **Follow below steps to have setup  up and running.**
 
