@@ -1,0 +1,7 @@
+[submodule "Source/conviva-ios-integration-refkit"]
+	path = Source/conviva-ios-integration-refkit
+	url = https://git.corp.conviva.com/device/conviva-ios-integration-refkit
+	branch = master
+[submodule "Source/conviva-react-native-refapp"]
+	path = Source/conviva-react-native-refapp
+	url = https://git.corp.conviva.com/device/conviva-react-native-refapp

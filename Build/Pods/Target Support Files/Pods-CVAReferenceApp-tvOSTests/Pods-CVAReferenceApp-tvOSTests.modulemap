@@ -1,0 +1,6 @@
+framework module Pods_CVAReferenceApp_tvOSTests {
+  umbrella header "Pods-CVAReferenceApp-tvOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
