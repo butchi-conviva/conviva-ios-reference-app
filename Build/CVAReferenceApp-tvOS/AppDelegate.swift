@@ -14,19 +14,36 @@ import ConvivaIntegrationRefKit_tvOS
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    lazy var reactApp:CVAReactApp = CVAReactApp.shared;
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-        // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
-
-        // Use a UIHostingController as window root view controller.
-        let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = UIHostingController(rootView: contentView)
-        self.window = window
-        window.makeKeyAndVisible()
-        return true
+//
+//        // Create the SwiftUI view that provides the window contents.
+//        let contentView = ContentView()
+//
+//        // Use a UIHostingController as window root view controller.
+//        let window = UIWindow(frame: UIScreen.main.bounds)
+//        window.rootViewController = UIHostingController(rootView: contentView)
+//        self.window = window
+//        window.makeKeyAndVisible()
+//        return true
+      
+      
+      let reactView = reactApp.setup(launchOptions: launchOptions);
+           
+           if let _ = reactView {
+             
+             reactView!.backgroundColor = UIColor.white;
+             self.window = UIWindow.init(frame: UIScreen.main.bounds);
+             let rootViewController = UIViewController(nibName: nil, bundle: nil);
+             rootViewController.view = reactView!;
+             self.window?.rootViewController = rootViewController;
+             self.window?.makeKeyAndVisible();
+             
+             return true;
+           }
+           
+           return false;
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
