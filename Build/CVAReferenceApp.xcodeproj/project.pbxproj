@@ -11,6 +11,13 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		1B3E326C500908350717D15E /* libPods-CVAReferenceAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF40734C99A0D3248462E43B /* libPods-CVAReferenceAppTests.a */; };
+		5125E4E7235099D7000C1C5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5125E4E6235099D7000C1C5C /* AppDelegate.swift */; };
+		5125E4E9235099D7000C1C5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5125E4E8235099D7000C1C5C /* ContentView.swift */; };
+		5125E4EB235099D9000C1C5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5125E4EA235099D9000C1C5C /* Assets.xcassets */; };
+		5125E4EE235099D9000C1C5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5125E4ED235099D9000C1C5C /* Preview Assets.xcassets */; };
+		5125E4F1235099D9000C1C5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5125E4EF235099D9000C1C5C /* LaunchScreen.storyboard */; };
+		5125E4FC235099D9000C1C5C /* CVAReferenceApp_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5125E4FB235099D9000C1C5C /* CVAReferenceApp_tvOSTests.swift */; };
+		5125E507235099D9000C1C5C /* CVAReferenceApp_tvOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5125E506235099D9000C1C5C /* CVAReferenceApp_tvOSUITests.swift */; };
 		5176E73F2326660300E1946D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5176E7362326660300E1946D /* AppDelegate.swift */; };
 		5176E7402326660300E1946D /* CVAPlayerEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5176E7392326660300E1946D /* CVAPlayerEventEmitter.m */; };
 		5176E7412326660300E1946D /* CVAPlayerEventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5176E73B2326660300E1946D /* CVAPlayerEventEmitter.swift */; };
@@ -33,6 +40,7 @@
 		5176E7822326795300E1946D /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5176E7722326795300E1946D /* FontAwesome5_Solid.ttf */; };
 		5176E7832326795300E1946D /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5176E7732326795300E1946D /* Feather.ttf */; };
 		51DF357E232018E700A1D2F6 /* ConvivaIntegrationRefKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DF357D232018E700A1D2F6 /* ConvivaIntegrationRefKit.framework */; };
+		558F6F6FA7D2F32B354DACAD /* libPods-CVAReferenceApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F07B49EB86975B69C844F132 /* libPods-CVAReferenceApp-tvOSTests.a */; };
 		94469AF066B17FE2D7EAD20F /* libPods-CVAReferenceApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A75874EE6C7274FB7B238CDB /* libPods-CVAReferenceApp.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +51,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = CVAReferenceApp;
+		};
+		5125E4F8235099D9000C1C5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5125E4E3235099D7000C1C5C;
+			remoteInfo = "CVAReferenceApp-tvOS";
+		};
+		5125E503235099D9000C1C5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5125E4E3235099D7000C1C5C;
+			remoteInfo = "CVAReferenceApp-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -61,6 +83,19 @@
 		2EBA9C7BDFB99EC31A823EE4 /* Pods-CVAReferenceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAReferenceApp.debug.xcconfig"; path = "Target Support Files/Pods-CVAReferenceApp/Pods-CVAReferenceApp.debug.xcconfig"; sourceTree = "<group>"; };
 		44EA0FC404BFB6DE6918F08B /* Pods-CVAReferenceApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAReferenceApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-CVAReferenceApp-tvOSTests/Pods-CVAReferenceApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		50E8776617BED577B332C902 /* Pods-CVAReferenceAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAReferenceAppTests.debug.xcconfig"; path = "Target Support Files/Pods-CVAReferenceAppTests/Pods-CVAReferenceAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5125E4E4235099D7000C1C5C /* CVAReferenceApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CVAReferenceApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5125E4E6235099D7000C1C5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5125E4E8235099D7000C1C5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5125E4EA235099D9000C1C5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5125E4ED235099D9000C1C5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5125E4F0235099D9000C1C5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5125E4F2235099D9000C1C5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5125E4F7235099D9000C1C5C /* CVAReferenceApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CVAReferenceApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5125E4FB235099D9000C1C5C /* CVAReferenceApp_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVAReferenceApp_tvOSTests.swift; sourceTree = "<group>"; };
+		5125E4FD235099D9000C1C5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5125E502235099D9000C1C5C /* CVAReferenceApp-tvOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CVAReferenceApp-tvOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5125E506235099D9000C1C5C /* CVAReferenceApp_tvOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVAReferenceApp_tvOSUITests.swift; sourceTree = "<group>"; };
+		5125E508235099D9000C1C5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		513DFAC1231FECD700F30511 /* ConvivaMediaPlayerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ConvivaMediaPlayerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5176E7352326660300E1946D /* CVAReferenceApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CVAReferenceApp-Bridging-Header.h"; path = "../Source/AppLayer/CVAReferenceApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		5176E7362326660300E1946D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../Source/AppLayer/AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +148,28 @@
 			files = (
 				51DF357E232018E700A1D2F6 /* ConvivaIntegrationRefKit.framework in Frameworks */,
 				94469AF066B17FE2D7EAD20F /* libPods-CVAReferenceApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5125E4E1235099D7000C1C5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5125E4F4235099D9000C1C5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558F6F6FA7D2F32B354DACAD /* libPods-CVAReferenceApp-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5125E4FF235099D9000C1C5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +260,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5125E4E5235099D7000C1C5C /* CVAReferenceApp-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				5125E4E6235099D7000C1C5C /* AppDelegate.swift */,
+				5125E4E8235099D7000C1C5C /* ContentView.swift */,
+				5125E4EA235099D9000C1C5C /* Assets.xcassets */,
+				5125E4EF235099D9000C1C5C /* LaunchScreen.storyboard */,
+				5125E4F2235099D9000C1C5C /* Info.plist */,
+				5125E4EC235099D9000C1C5C /* Preview Content */,
+			);
+			path = "CVAReferenceApp-tvOS";
+			sourceTree = "<group>";
+		};
+		5125E4EC235099D9000C1C5C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5125E4ED235099D9000C1C5C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5125E4FA235099D9000C1C5C /* CVAReferenceApp-tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				5125E4FB235099D9000C1C5C /* CVAReferenceApp_tvOSTests.swift */,
+				5125E4FD235099D9000C1C5C /* Info.plist */,
+			);
+			path = "CVAReferenceApp-tvOSTests";
+			sourceTree = "<group>";
+		};
+		5125E505235099D9000C1C5C /* CVAReferenceApp-tvOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5125E506235099D9000C1C5C /* CVAReferenceApp_tvOSUITests.swift */,
+				5125E508235099D9000C1C5C /* Info.plist */,
+			);
+			path = "CVAReferenceApp-tvOSUITests";
+			sourceTree = "<group>";
+		};
 		5176E7372326660300E1946D /* NativeBridge */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,19 +314,14 @@
 			path = ../Source/AppLayer/NativeBridge;
 			sourceTree = "<group>";
 		};
-		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Libraries;
-			sourceTree = "<group>";
-		};
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
 				13B07FAE1A68108700A75B9A /* CVAReferenceApp */,
-				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* CVAReferenceAppTests */,
+				5125E4E5235099D7000C1C5C /* CVAReferenceApp-tvOS */,
+				5125E4FA235099D9000C1C5C /* CVAReferenceApp-tvOSTests */,
+				5125E505235099D9000C1C5C /* CVAReferenceApp-tvOSUITests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				1CB95D004BB8FD6593D99539 /* Pods */,
@@ -246,6 +337,9 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* CVAReferenceApp.app */,
 				00E356EE1AD99517003FC87E /* CVAReferenceAppTests.xctest */,
+				5125E4E4235099D7000C1C5C /* CVAReferenceApp-tvOS.app */,
+				5125E4F7235099D9000C1C5C /* CVAReferenceApp-tvOSTests.xctest */,
+				5125E502235099D9000C1C5C /* CVAReferenceApp-tvOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -292,12 +386,70 @@
 			productReference = 13B07F961A680F5B00A75B9A /* CVAReferenceApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5125E4E3235099D7000C1C5C /* CVAReferenceApp-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5125E50F235099D9000C1C5C /* Build configuration list for PBXNativeTarget "CVAReferenceApp-tvOS" */;
+			buildPhases = (
+				8240F2945C29C370B8CD7F05 /* [CP] Check Pods Manifest.lock */,
+				5125E51323509CD5000C1C5C /* Start Packager */,
+				5125E4E0235099D7000C1C5C /* Sources */,
+				5125E4E1235099D7000C1C5C /* Frameworks */,
+				5125E4E2235099D7000C1C5C /* Resources */,
+				5125E51223509C51000C1C5C /* Bundle React Native code and images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CVAReferenceApp-tvOS";
+			productName = "CVAReferenceApp-tvOS";
+			productReference = 5125E4E4235099D7000C1C5C /* CVAReferenceApp-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5125E4F6235099D9000C1C5C /* CVAReferenceApp-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5125E510235099D9000C1C5C /* Build configuration list for PBXNativeTarget "CVAReferenceApp-tvOSTests" */;
+			buildPhases = (
+				B3D91C543648B3E64929AF60 /* [CP] Check Pods Manifest.lock */,
+				5125E4F3235099D9000C1C5C /* Sources */,
+				5125E4F4235099D9000C1C5C /* Frameworks */,
+				5125E4F5235099D9000C1C5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5125E4F9235099D9000C1C5C /* PBXTargetDependency */,
+			);
+			name = "CVAReferenceApp-tvOSTests";
+			productName = "CVAReferenceApp-tvOSTests";
+			productReference = 5125E4F7235099D9000C1C5C /* CVAReferenceApp-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5125E501235099D9000C1C5C /* CVAReferenceApp-tvOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5125E511235099D9000C1C5C /* Build configuration list for PBXNativeTarget "CVAReferenceApp-tvOSUITests" */;
+			buildPhases = (
+				5125E4FE235099D9000C1C5C /* Sources */,
+				5125E4FF235099D9000C1C5C /* Frameworks */,
+				5125E500235099D9000C1C5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5125E504235099D9000C1C5C /* PBXTargetDependency */,
+			);
+			name = "CVAReferenceApp-tvOSUITests";
+			productName = "CVAReferenceApp-tvOSUITests";
+			productReference = 5125E502235099D9000C1C5C /* CVAReferenceApp-tvOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
@@ -309,6 +461,23 @@
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = XKZH2TQ9WG;
 						LastSwiftMigration = 1030;
+					};
+					5125E4E3235099D7000C1C5C = {
+						CreatedOnToolsVersion = 11.0;
+						DevelopmentTeam = D4W5F4Y63B;
+						ProvisioningStyle = Automatic;
+					};
+					5125E4F6235099D9000C1C5C = {
+						CreatedOnToolsVersion = 11.0;
+						DevelopmentTeam = D4W5F4Y63B;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5125E4E3235099D7000C1C5C;
+					};
+					5125E501235099D9000C1C5C = {
+						CreatedOnToolsVersion = 11.0;
+						DevelopmentTeam = D4W5F4Y63B;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5125E4E3235099D7000C1C5C;
 					};
 				};
 			};
@@ -328,6 +497,9 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* CVAReferenceApp */,
 				00E356ED1AD99517003FC87E /* CVAReferenceAppTests */,
+				5125E4E3235099D7000C1C5C /* CVAReferenceApp-tvOS */,
+				5125E4F6235099D9000C1C5C /* CVAReferenceApp-tvOSTests */,
+				5125E501235099D9000C1C5C /* CVAReferenceApp-tvOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -362,6 +534,30 @@
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				5176E7742326795300E1946D /* SimpleLineIcons.ttf in Resources */,
 				5176E7822326795300E1946D /* FontAwesome5_Solid.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5125E4E2235099D7000C1C5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5125E4F1235099D9000C1C5C /* LaunchScreen.storyboard in Resources */,
+				5125E4EE235099D9000C1C5C /* Preview Assets.xcassets in Resources */,
+				5125E4EB235099D9000C1C5C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5125E4F5235099D9000C1C5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5125E500235099D9000C1C5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +600,64 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5125E51223509C51000C1C5C /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport NODE_BINARY=node\n../Source/conviva-react-native-refapp/node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		5125E51323509CD5000C1C5C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\necho ${SRCROOT}\n\nexport RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../Source/conviva-react-native-refapp/node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../Source/conviva-react-native-refapp/node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n\n";
+		};
+		8240F2945C29C370B8CD7F05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CVAReferenceApp-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		87A9333B30F862753547FE68 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,6 +674,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-CVAReferenceAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3D91C543648B3E64929AF60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CVAReferenceApp-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -468,6 +744,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5125E4E0235099D7000C1C5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5125E4E9235099D7000C1C5C /* ContentView.swift in Sources */,
+				5125E4E7235099D7000C1C5C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5125E4F3235099D9000C1C5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5125E4FC235099D9000C1C5C /* CVAReferenceApp_tvOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5125E4FE235099D9000C1C5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5125E507235099D9000C1C5C /* CVAReferenceApp_tvOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -475,6 +776,16 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* CVAReferenceApp */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		5125E4F9235099D9000C1C5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5125E4E3235099D7000C1C5C /* CVAReferenceApp-tvOS */;
+			targetProxy = 5125E4F8235099D9000C1C5C /* PBXContainerItemProxy */;
+		};
+		5125E504235099D9000C1C5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5125E4E3235099D7000C1C5C /* CVAReferenceApp-tvOS */;
+			targetProxy = 5125E503235099D9000C1C5C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -486,6 +797,14 @@
 			);
 			name = LaunchScreen.xib;
 			path = CVAReferenceApp;
+			sourceTree = "<group>";
+		};
+		5125E4EF235099D9000C1C5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5125E4F0235099D9000C1C5C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -599,6 +918,191 @@
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		5125E509235099D9000C1C5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64D5C1B86A1BE8E4789C75D7 /* Pods-CVAReferenceApp-tvOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"CVAReferenceApp-tvOS/Preview Content\"";
+				DEVELOPMENT_TEAM = D4W5F4Y63B;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "CVAReferenceApp-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.conviva.CVAReferenceApp-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+			};
+			name = Debug;
+		};
+		5125E50A235099D9000C1C5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3816C778BA1AECA8EC41AFD /* Pods-CVAReferenceApp-tvOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"CVAReferenceApp-tvOS/Preview Content\"";
+				DEVELOPMENT_TEAM = D4W5F4Y63B;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "CVAReferenceApp-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.conviva.CVAReferenceApp-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+			};
+			name = Release;
+		};
+		5125E50B235099D9000C1C5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A75C826EDADBA33817E95ADA /* Pods-CVAReferenceApp-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = D4W5F4Y63B;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "CVAReferenceApp-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.conviva.CVAReferenceApp-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CVAReferenceApp-tvOS.app/CVAReferenceApp-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+			};
+			name = Debug;
+		};
+		5125E50C235099D9000C1C5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44EA0FC404BFB6DE6918F08B /* Pods-CVAReferenceApp-tvOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = D4W5F4Y63B;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "CVAReferenceApp-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.conviva.CVAReferenceApp-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CVAReferenceApp-tvOS.app/CVAReferenceApp-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+			};
+			name = Release;
+		};
+		5125E50D235099D9000C1C5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = D4W5F4Y63B;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "CVAReferenceApp-tvOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.conviva.CVAReferenceApp-tvOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = "CVAReferenceApp-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+			};
+			name = Debug;
+		};
+		5125E50E235099D9000C1C5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = D4W5F4Y63B;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "CVAReferenceApp-tvOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.conviva.CVAReferenceApp-tvOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = "CVAReferenceApp-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Release;
 		};
@@ -718,6 +1222,33 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5125E50F235099D9000C1C5C /* Build configuration list for PBXNativeTarget "CVAReferenceApp-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5125E509235099D9000C1C5C /* Debug */,
+				5125E50A235099D9000C1C5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5125E510235099D9000C1C5C /* Build configuration list for PBXNativeTarget "CVAReferenceApp-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5125E50B235099D9000C1C5C /* Debug */,
+				5125E50C235099D9000C1C5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5125E511235099D9000C1C5C /* Build configuration list for PBXNativeTarget "CVAReferenceApp-tvOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5125E50D235099D9000C1C5C /* Debug */,
+				5125E50E235099D9000C1C5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
