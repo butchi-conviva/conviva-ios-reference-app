@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftUI
+import ConvivaIntegrationRefKit_tvOS
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

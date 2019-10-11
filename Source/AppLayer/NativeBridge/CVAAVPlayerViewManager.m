@@ -7,8 +7,16 @@
 //
 
 #import "CVAAVPlayerViewManager.h"
-#import "CVAReferenceApp-Swift.h"
-#import <ConvivaIntegrationRefKit/ConvivaIntegrationRefKit-Swift.h>
+
+
+#if TARGET_OS_TV
+    #import "CVAReferenceApp_tvOS-Swift.h"
+    #import <ConvivaIntegrationRefKit_tvOS/ConvivaIntegrationRefKit_tvOS.h>
+#else TARGET_OS_IOS
+    #import "CVAReferenceApp-Swift.h"
+    #import <ConvivaIntegrationRefKit/ConvivaIntegrationRefKit-Swift.h>
+#endif
+
 
 @interface CVAPlayerViewManager()<CVAPlayerContentViewProvider>
 

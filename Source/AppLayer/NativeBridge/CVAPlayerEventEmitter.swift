@@ -7,7 +7,11 @@
 //
 
 import Foundation
+#if os(iOS)
 import ConvivaIntegrationRefKit
+#else
+import ConvivaIntegrationRefKit_tvOS
+#endif
 
 @objc(CVAPlayerEventEmitter)
 open class CVAPlayerEventEmitter: RCTEventEmitter {
@@ -32,7 +36,7 @@ open class CVAPlayerEventEmitter: RCTEventEmitter {
     }
   }
   
-  override open static func requiresMainQueueSetup() -> Bool {
+  override public static func requiresMainQueueSetup() -> Bool {
     return true;
   }
 }
