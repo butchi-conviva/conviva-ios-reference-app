@@ -32,6 +32,8 @@
 		5125E5622350AC26000C1C5C /* CVAAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5125E5612350AC26000C1C5C /* CVAAppConstants.swift */; };
 		5125E5632350AC26000C1C5C /* CVAAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5125E5612350AC26000C1C5C /* CVAAppConstants.swift */; };
 		5125E5652350AEDD000C1C5C /* libPods-CVAReferenceApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5125E5642350AEDD000C1C5C /* libPods-CVAReferenceApp-tvOS.a */; };
+		516C9FCE2355EA11007AA27A /* ConvivaIntegrationRefKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516C9FCC2355EA09007AA27A /* ConvivaIntegrationRefKit.framework */; };
+		516C9FCF2355EA11007AA27A /* ConvivaIntegrationRefKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 516C9FCC2355EA09007AA27A /* ConvivaIntegrationRefKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5176E73F2326660300E1946D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5176E7362326660300E1946D /* AppDelegate.swift */; };
 		5176E7742326795300E1946D /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5176E7642326795300E1946D /* SimpleLineIcons.ttf */; };
 		5176E7752326795300E1946D /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5176E7652326795300E1946D /* Zocial.ttf */; };
@@ -49,7 +51,6 @@
 		5176E7812326795300E1946D /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5176E7712326795300E1946D /* MaterialCommunityIcons.ttf */; };
 		5176E7822326795300E1946D /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5176E7722326795300E1946D /* FontAwesome5_Solid.ttf */; };
 		5176E7832326795300E1946D /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5176E7732326795300E1946D /* Feather.ttf */; };
-		51DF357E232018E700A1D2F6 /* ConvivaIntegrationRefKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DF357D232018E700A1D2F6 /* ConvivaIntegrationRefKit.framework */; };
 		558F6F6FA7D2F32B354DACAD /* libPods-CVAReferenceApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F07B49EB86975B69C844F132 /* libPods-CVAReferenceApp-tvOSTests.a */; };
 		94469AF066B17FE2D7EAD20F /* libPods-CVAReferenceApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A75874EE6C7274FB7B238CDB /* libPods-CVAReferenceApp.a */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,20 @@
 			remoteInfo = "CVAReferenceApp-tvOS";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		516C9FD02355EA11007AA27A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				516C9FCF2355EA11007AA27A /* ConvivaIntegrationRefKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -119,6 +134,7 @@
 		5125E5612350AC26000C1C5C /* CVAAppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CVAAppConstants.swift; path = ../Source/AppLayer/CVAAppConstants.swift; sourceTree = "<group>"; };
 		5125E5642350AEDD000C1C5C /* libPods-CVAReferenceApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-CVAReferenceApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		513DFAC1231FECD700F30511 /* ConvivaMediaPlayerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ConvivaMediaPlayerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		516C9FCC2355EA09007AA27A /* ConvivaIntegrationRefKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ConvivaIntegrationRefKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5176E7352326660300E1946D /* CVAReferenceApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CVAReferenceApp-Bridging-Header.h"; path = "../Source/AppLayer/CVAReferenceApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		5176E7362326660300E1946D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../Source/AppLayer/AppDelegate.swift; sourceTree = "<group>"; };
 		5176E7642326795300E1946D /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SimpleLineIcons.ttf; path = "../Source/conviva-react-native-refapp/node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
@@ -161,8 +177,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51DF357E232018E700A1D2F6 /* ConvivaIntegrationRefKit.framework in Frameworks */,
 				94469AF066B17FE2D7EAD20F /* libPods-CVAReferenceApp.a in Frameworks */,
+				516C9FCE2355EA11007AA27A /* ConvivaIntegrationRefKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +280,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				516C9FCC2355EA09007AA27A /* ConvivaIntegrationRefKit.framework */,
 				5125E5642350AEDD000C1C5C /* libPods-CVAReferenceApp-tvOS.a */,
 				5125E53223509DDC000C1C5C /* ConvivaIntegrationRefKit_tvOS.framework */,
 				5125E51423509D8D000C1C5C /* ConvivaIntegrationRefKit.framework */,
@@ -406,6 +423,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				516C9FD02355EA11007AA27A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -494,7 +512,7 @@
 					};
 					5125E4E3235099D7000C1C5C = {
 						CreatedOnToolsVersion = 11.0;
-						DevelopmentTeam = D4W5F4Y63B;
+						DevelopmentTeam = XKZH2TQ9WG;
 						ProvisioningStyle = Automatic;
 					};
 					5125E4F6235099D9000C1C5C = {
@@ -904,6 +922,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = XKZH2TQ9WG;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -936,6 +955,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XKZH2TQ9WG;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -973,7 +993,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_ASSET_PATHS = "\"CVAReferenceApp-tvOS/Preview Content\"";
-				DEVELOPMENT_TEAM = D4W5F4Y63B;
+				DEVELOPMENT_TEAM = XKZH2TQ9WG;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "CVAReferenceApp-tvOS/Info.plist";
@@ -1007,7 +1027,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"CVAReferenceApp-tvOS/Preview Content\"";
-				DEVELOPMENT_TEAM = D4W5F4Y63B;
+				DEVELOPMENT_TEAM = XKZH2TQ9WG;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "CVAReferenceApp-tvOS/Info.plist";
