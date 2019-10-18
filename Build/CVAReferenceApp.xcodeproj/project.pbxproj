@@ -51,6 +51,7 @@
 		5176E7812326795300E1946D /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5176E7712326795300E1946D /* MaterialCommunityIcons.ttf */; };
 		5176E7822326795300E1946D /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5176E7722326795300E1946D /* FontAwesome5_Solid.ttf */; };
 		5176E7832326795300E1946D /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5176E7732326795300E1946D /* Feather.ttf */; };
+		51B079FB2359C543005CD04E /* CVARootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B079FA2359C543005CD04E /* CVARootViewController.swift */; };
 		558F6F6FA7D2F32B354DACAD /* libPods-CVAReferenceApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F07B49EB86975B69C844F132 /* libPods-CVAReferenceApp-tvOSTests.a */; };
 		94469AF066B17FE2D7EAD20F /* libPods-CVAReferenceApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A75874EE6C7274FB7B238CDB /* libPods-CVAReferenceApp.a */; };
 /* End PBXBuildFile section */
@@ -153,6 +154,7 @@
 		5176E7712326795300E1946D /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialCommunityIcons.ttf; path = "../Source/conviva-react-native-refapp/node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		5176E7722326795300E1946D /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Solid.ttf; path = "../Source/conviva-react-native-refapp/node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		5176E7732326795300E1946D /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Feather.ttf; path = "../Source/conviva-react-native-refapp/node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		51B079FA2359C543005CD04E /* CVARootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CVARootViewController.swift; path = ../Source/AppLayer/CVARootViewController.swift; sourceTree = "<group>"; };
 		51DF357D232018E700A1D2F6 /* ConvivaIntegrationRefKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ConvivaIntegrationRefKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D5C1B86A1BE8E4789C75D7 /* Pods-CVAReferenceApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAReferenceApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-CVAReferenceApp-tvOS/Pods-CVAReferenceApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A75874EE6C7274FB7B238CDB /* libPods-CVAReferenceApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CVAReferenceApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				5176E7362326660300E1946D /* AppDelegate.swift */,
+				51B079FA2359C543005CD04E /* CVARootViewController.swift */,
 				5176E7352326660300E1946D /* CVAReferenceApp-Bridging-Header.h */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -787,6 +790,7 @@
 				5125E5552350A3C0000C1C5C /* CVAPlayerEventEmitter.swift in Sources */,
 				5125E55B2350A43F000C1C5C /* CVAReactApp.swift in Sources */,
 				5125E5622350AC26000C1C5C /* CVAAppConstants.swift in Sources */,
+				51B079FB2359C543005CD04E /* CVARootViewController.swift in Sources */,
 				5176E73F2326660300E1946D /* AppDelegate.swift in Sources */,
 				5125E5562350A3C0000C1C5C /* CVAPlayerBridge.mm in Sources */,
 				5125E5572350A3C0000C1C5C /* CVAAVPlayerViewManager.m in Sources */,

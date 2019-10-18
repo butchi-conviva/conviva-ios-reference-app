@@ -15,8 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   lazy var reactApp:CVAReactApp = CVAReactApp.shared;
   
-  
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
       
@@ -26,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         reactView!.backgroundColor = UIColor.white;
         self.window = UIWindow.init(frame: UIScreen.main.bounds);
-        let rootViewController = UIViewController(nibName: nil, bundle: nil);
+        let rootViewController = CVARootViewController(nibName: nil, bundle: nil);
         reactView?.backgroundColor = UIColor(red: 51.0/225.0, green: 52.0/255.0, blue: 53.0/255, alpha: 1.0);
         rootViewController.view = reactView!;
         self.window?.rootViewController = rootViewController;
