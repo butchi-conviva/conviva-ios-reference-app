@@ -10,30 +10,27 @@ import UIKit
 import ConvivaIntegrationRefKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate,RCTBridgeDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
-    private(set) var reactBridge:RCTBridge? = nil;
-
+  var window: UIWindow?
+  lazy var reactApp:CVAReactApp = CVAReactApp.shared;
+  
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
       
-      self.reactBridge = RCTBridge(delegate: self, launchOptions: launchOptions);
+      let reactView = reactApp.setup(launchOptions: launchOptions);
       
-      if let _ = self.reactBridge {
+      if let _ = reactView {
         
-        /* Register player handler */
-        let _ = self.setupReactBridge(bridge: self.reactBridge!);
-        
-        let rootView = RCTRootView(bridge: self.reactBridge!, moduleName: "CVAReferenceApp", initialProperties: nil);
-        rootView.backgroundColor = UIColor.white;
-        
+        reactView!.backgroundColor = UIColor.white;
         self.window = UIWindow.init(frame: UIScreen.main.bounds);
-        let rootViewController = UIViewController(nibName: nil, bundle: nil);
-        rootViewController.view = rootView;
+        let rootViewController = CVARootViewController(nibName: nil, bundle: nil);
+        reactView?.backgroundColor = UIColor(red: 51.0/225.0, green: 52.0/255.0, blue: 53.0/255, alpha: 1.0);
+        rootViewController.view = reactView!;
         self.window?.rootViewController = rootViewController;
         self.window?.makeKeyAndVisible();
         
+        application.statusBarStyle = .lightContent;
         return true;
       }
       
@@ -61,41 +58,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate,RCTBridgeDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-  
-
-  func sourceURL(for bridge: RCTBridge!) -> URL! {
-    #if DEBUG
-      return RCTBundleURLProvider.sharedSettings()?.jsBundleURL(forBundleRoot: "index", fallbackResource: nil);
-    #else
-      return Bundle.main.url(forResource: "main", withExtension: "jsbundle");
-    #endif
-  }
-  
-  
-  func setupReactBridge(bridge:RCTBridge) -> Bool{
-  
-    var status:Bool = false;
-  
-    let playerModule = bridge.module(for: CVAPlayerBridge.self) as? CVAPlayerBridge;
-    let eventEmitter = bridge.module(for: CVAPlayerEventEmitter.self) as? CVAPlayerEventEmitter;
-    let avPlayer = CVAAVPlayer();
-    
-    
-    let playerViewMgr = self.reactBridge?.module(forName: "CVAPlayerView") as! CVAPlayerViewManager;
- 
-    let playerEventManager =  CVAPlayerEventManager(eventEmitter:eventEmitter!);
-    let playerManager = CVAPlayerManager(playerWithCmdHandler: avPlayer,
-                                         playerEventManager:playerEventManager,
-                                         playerContentViewProvider:playerViewMgr as! CVAPlayerContentViewProvider);
-    
-    
-    if let _ = playerModule {
-      playerModule?.reactBridge = self.reactBridge;
-      playerModule!.registerHandler(playerManager);
-      status = true;
-    }
-    
-    return status;
-  }
 }
 

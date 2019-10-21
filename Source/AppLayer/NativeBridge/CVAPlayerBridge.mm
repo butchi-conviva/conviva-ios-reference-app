@@ -8,12 +8,12 @@
 
 #import "CVAPlayerBridge.h"
 #import <React/RCTLog.h>
-#import "CVAReferenceApp-Swift.h"
 
-
-
-
-
+#if TARGET_OS_TV
+    #import "CVAReferenceApp_tvOS-Swift.h"
+#else TARGET_OS_IOS
+    #import "CVAReferenceApp-Swift.h"
+#endif
 
 @interface CVAPlayerBridge()
 
