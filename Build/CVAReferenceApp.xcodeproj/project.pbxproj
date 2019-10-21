@@ -54,6 +54,8 @@
 		51B079FB2359C543005CD04E /* CVARootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B079FA2359C543005CD04E /* CVARootViewController.swift */; };
 		558F6F6FA7D2F32B354DACAD /* libPods-CVAReferenceApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F07B49EB86975B69C844F132 /* libPods-CVAReferenceApp-tvOSTests.a */; };
 		94469AF066B17FE2D7EAD20F /* libPods-CVAReferenceApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A75874EE6C7274FB7B238CDB /* libPods-CVAReferenceApp.a */; };
+		E98EDA83235D8C7900F37755 /* ConvivaIntegrationRefKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DF357D232018E700A1D2F6 /* ConvivaIntegrationRefKit.framework */; };
+		E98EDA84235D8C7900F37755 /* ConvivaIntegrationRefKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51DF357D232018E700A1D2F6 /* ConvivaIntegrationRefKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,13 +83,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		516C9FD02355EA11007AA27A /* Embed Frameworks */ = {
+
+		E98EDA85235D8C7900F37755 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				516C9FCF2355EA11007AA27A /* ConvivaIntegrationRefKit.framework in Embed Frameworks */,
+				E98EDA84235D8C7900F37755 /* ConvivaIntegrationRefKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,7 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94469AF066B17FE2D7EAD20F /* libPods-CVAReferenceApp.a in Frameworks */,
-				516C9FCE2355EA11007AA27A /* ConvivaIntegrationRefKit.framework in Frameworks */,
+				E98EDA83235D8C7900F37755 /* ConvivaIntegrationRefKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +429,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				516C9FD02355EA11007AA27A /* Embed Frameworks */,
+				E98EDA85235D8C7900F37755 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -506,21 +509,22 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = D4W5F4Y63B;
+						DevelopmentTeam = XKZH2TQ9WG;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = XKZH2TQ9WG;
 						LastSwiftMigration = 1030;
 					};
-					5125E4E3235099D7000C1C5C = {
-						CreatedOnToolsVersion = 11.0;
+
+					2D02E47A1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = XKZH2TQ9WG;
 						ProvisioningStyle = Automatic;
 					};
-					5125E4F6235099D9000C1C5C = {
-						CreatedOnToolsVersion = 11.0;
-						DevelopmentTeam = D4W5F4Y63B;
+					2D02E48F1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XKZH2TQ9WG;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 5125E4E3235099D7000C1C5C;
 					};
@@ -876,7 +880,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = D4W5F4Y63B;
+				DEVELOPMENT_TEAM = XKZH2TQ9WG;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -902,7 +906,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = D4W5F4Y63B;
+				DEVELOPMENT_TEAM = XKZH2TQ9WG;
 				INFOPLIST_FILE = CVAReferenceAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -996,6 +1000,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+
 				DEVELOPMENT_ASSET_PATHS = "\"CVAReferenceApp-tvOS/Preview Content\"";
 				DEVELOPMENT_TEAM = XKZH2TQ9WG;
 				ENABLE_PREVIEWS = YES;
@@ -1030,6 +1035,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+
 				DEVELOPMENT_ASSET_PATHS = "\"CVAReferenceApp-tvOS/Preview Content\"";
 				DEVELOPMENT_TEAM = XKZH2TQ9WG;
 				ENABLE_PREVIEWS = YES;
