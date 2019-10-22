@@ -32,8 +32,6 @@
 		5125E5622350AC26000C1C5C /* CVAAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5125E5612350AC26000C1C5C /* CVAAppConstants.swift */; };
 		5125E5632350AC26000C1C5C /* CVAAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5125E5612350AC26000C1C5C /* CVAAppConstants.swift */; };
 		5125E5652350AEDD000C1C5C /* libPods-CVAReferenceApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5125E5642350AEDD000C1C5C /* libPods-CVAReferenceApp-tvOS.a */; };
-		516C9FCE2355EA11007AA27A /* ConvivaIntegrationRefKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516C9FCC2355EA09007AA27A /* ConvivaIntegrationRefKit.framework */; };
-		516C9FCF2355EA11007AA27A /* ConvivaIntegrationRefKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 516C9FCC2355EA09007AA27A /* ConvivaIntegrationRefKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5176E73F2326660300E1946D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5176E7362326660300E1946D /* AppDelegate.swift */; };
 		5176E7742326795300E1946D /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5176E7642326795300E1946D /* SimpleLineIcons.ttf */; };
 		5176E7752326795300E1946D /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5176E7652326795300E1946D /* Zocial.ttf */; };
@@ -83,7 +81,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-
 		E98EDA85235D8C7900F37755 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -516,17 +513,13 @@
 						DevelopmentTeam = XKZH2TQ9WG;
 						LastSwiftMigration = 1030;
 					};
-
-					2D02E47A1E0B4A5D006451C7 = {
-						CreatedOnToolsVersion = 8.2.1;
+					5125E4E3235099D7000C1C5C = {
 						DevelopmentTeam = XKZH2TQ9WG;
 						ProvisioningStyle = Automatic;
 					};
-					2D02E48F1E0B4A5D006451C7 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = XKZH2TQ9WG;
+					5125E4F6235099D9000C1C5C = {
+						DevelopmentTeam = D4W5F4Y63B;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 5125E4E3235099D7000C1C5C;
 					};
 					5125E501235099D9000C1C5C = {
 						CreatedOnToolsVersion = 11.0;
@@ -1000,7 +993,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-
 				DEVELOPMENT_ASSET_PATHS = "\"CVAReferenceApp-tvOS/Preview Content\"";
 				DEVELOPMENT_TEAM = XKZH2TQ9WG;
 				ENABLE_PREVIEWS = YES;
@@ -1035,7 +1027,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-
 				DEVELOPMENT_ASSET_PATHS = "\"CVAReferenceApp-tvOS/Preview Content\"";
 				DEVELOPMENT_TEAM = XKZH2TQ9WG;
 				ENABLE_PREVIEWS = YES;
