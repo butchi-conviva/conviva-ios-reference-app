@@ -7,10 +7,11 @@
 //
 
 import Foundation
-import UIKit
 
 #if os(iOS)
 import ConvivaIntegrationRefKit
+import UIKit
+import CoreTelephony
 #else
 import ConvivaIntegrationRefKit_tvOS
 #endif

@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-      
-      let reactView = reactApp.setup(launchOptions: launchOptions);
+        
+      let reactView = self.reactApp.setup(launchOptions: launchOptions);
       
       if let _ = reactView {
         
@@ -33,7 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.statusBarStyle = .lightContent;
         return true;
       }
-      
       return false;
     }
 
