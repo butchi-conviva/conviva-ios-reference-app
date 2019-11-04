@@ -19,7 +19,7 @@ open class CVAPlayerEventEmitter: RCTEventEmitter {
   private var hasListeners:Bool = false;
   
   override open func supportedEvents() -> [String]! {
-    return [CVAPlayerEvent.onPlayHeadChange.rawValue];
+    return [CVAPlayerEvent.onPlayHeadChange.rawValue,CVAPlayerEvent.onPlayerdidFinishPlaying.rawValue,CVAPlayerEvent.onPlayerdidFailPlaying.rawValue];
   }
   
   override open func startObserving() {
