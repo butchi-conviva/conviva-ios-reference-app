@@ -32,7 +32,8 @@ target 'CVAReferenceApp' do
   pod 'RNGestureHandler', :path => '../Source/conviva-react-native-refapp/node_modules/react-native-gesture-handler'
 
   pod 'react-native-slider', :path => '../Source/conviva-react-native-refapp/node_modules/@react-native-community/slider'
-  
+  pod 'GoogleAds-IMA-iOS-SDK', '~> 3.7'
+
   target 'CVAReferenceAppTests' do
     inherit! :search_paths
     # Pods for testing

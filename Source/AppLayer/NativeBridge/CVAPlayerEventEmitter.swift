@@ -19,7 +19,31 @@ open class CVAPlayerEventEmitter: RCTEventEmitter {
   private var hasListeners:Bool = false;
   
   override open func supportedEvents() -> [String]! {
-    return [CVAPlayerEvent.onPlayHeadChange.rawValue,CVAPlayerEvent.onPlayerdidFinishPlaying.rawValue,CVAPlayerEvent.onPlayerdidFailPlaying.rawValue];
+//    return [CVAPlayerEvent.onPlayHeadChange.rawValue,
+//            CVAPlayerEvent.onContentPlayDidFinish.rawValue,
+//            CVAPlayerEvent.onContentPlayDidFail.rawValue];
+    
+    return [CVAPlayerEvent.onPlayHeadChange.rawValue,
+            CVAPlayerEvent.onPlayerdidFinishPlaying.rawValue,
+            CVAPlayerEvent.onPlayerdidFailPlaying.rawValue,
+            CVAPlayerEvent.onAdLoading.rawValue,
+            CVAPlayerEvent.onAdLoadDidFail.rawValue,
+            CVAPlayerEvent.onAdPlayDidStart.rawValue,
+            CVAPlayerEvent.onAdPlayDidFail.rawValue,
+            CVAPlayerEvent.onAdPlayDidFinish.rawValue];
+
+//    return [CVAPlayerEvent.onContentLoading.rawValue,
+//            CVAPlayerEvent.onContentLoadDidFail.rawValue,
+//            CVAPlayerEvent.onContentPlayDidStart.rawValue,
+//            CVAPlayerEvent.onContentPlayDidFail.rawValue,
+//            CVAPlayerEvent.onContentPlayDidFinish.rawValue,
+//            CVAPlayerEvent.onPlayHeadChange.rawValue,
+//            CVAPlayerEvent.onPlayerStateChange.rawValue,
+//            CVAPlayerEvent.onAdLoading.rawValue,
+//            CVAPlayerEvent.onAdLoadDidFail.rawValue,
+//            CVAPlayerEvent.onAdPlayDidStart.rawValue,
+//            CVAPlayerEvent.onAdPlayDidFail.rawValue,
+//            CVAPlayerEvent.onAdPlayDidFinish.rawValue];
   }
   
   override open func startObserving() {
@@ -36,7 +60,7 @@ open class CVAPlayerEventEmitter: RCTEventEmitter {
     }
   }
   
-  override public static func requiresMainQueueSetup() -> Bool {
+  override open static func requiresMainQueueSetup() -> Bool {
     return true;
   }
 }
