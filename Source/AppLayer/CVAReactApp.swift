@@ -59,7 +59,6 @@ class CVAReactApp: NSObject {
                                          playerEventManager:playerEventManager,
                                          playerContentViewProvider:playerViewMgr as! CVAPlayerContentViewProvider);
     
-    
     if let _ = playerModule {
       playerModule?.reactBridge = self.reactBridge;
       playerModule!.registerHandler(playerManager);

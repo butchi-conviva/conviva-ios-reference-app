@@ -167,6 +167,7 @@
 		51B079FA2359C543005CD04E /* CVARootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CVARootViewController.swift; path = ../Source/AppLayer/CVARootViewController.swift; sourceTree = "<group>"; };
 		51DF357D232018E700A1D2F6 /* ConvivaIntegrationRefKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ConvivaIntegrationRefKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D5C1B86A1BE8E4789C75D7 /* Pods-CVAReferenceApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAReferenceApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-CVAReferenceApp-tvOS/Pods-CVAReferenceApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6F4ED8C0237AFA9800F49963 /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInteractiveMediaAds.framework; path = "Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework"; sourceTree = "<group>"; };
 		A75874EE6C7274FB7B238CDB /* libPods-CVAReferenceApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CVAReferenceApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75C826EDADBA33817E95ADA /* Pods-CVAReferenceApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAReferenceApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-CVAReferenceApp-tvOSTests/Pods-CVAReferenceApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3816C778BA1AECA8EC41AFD /* Pods-CVAReferenceApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAReferenceApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-CVAReferenceApp-tvOS/Pods-CVAReferenceApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -293,6 +294,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6F4ED8C0237AFA9800F49963 /* GoogleInteractiveMediaAds.framework */,
 				516C9FCC2355EA09007AA27A /* ConvivaIntegrationRefKit.framework */,
 				5125E5642350AEDD000C1C5C /* libPods-CVAReferenceApp-tvOS.a */,
 				5125E53223509DDC000C1C5C /* ConvivaIntegrationRefKit_tvOS.framework */,
@@ -436,6 +438,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				E98EDA85235D8C7900F37755 /* Embed Frameworks */,
+				2435018C63FC05954F0C2A9C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -656,6 +659,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2435018C63FC05954F0C2A9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CVAReferenceApp/Pods-CVAReferenceApp-frameworks.sh",
+				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CVAReferenceApp/Pods-CVAReferenceApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5125E51223509C51000C1C5C /* Bundle React Native code and images */ = {
@@ -932,7 +953,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = XKZH2TQ9WG;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Pods/GoogleAds-IMA-iOS-SDK";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -965,7 +986,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XKZH2TQ9WG;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Pods/GoogleAds-IMA-iOS-SDK";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
