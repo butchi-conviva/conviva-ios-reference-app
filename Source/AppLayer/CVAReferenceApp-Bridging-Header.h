@@ -10,5 +10,3 @@
 #import <React/RCTEventEmitter.h>
 #import "CVAPlayerBridge.h"
 #import "CVAAVPlayerViewManager.h"
-
-#import "CVAAdViewManager.h"

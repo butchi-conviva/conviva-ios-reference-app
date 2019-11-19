@@ -51,8 +51,6 @@
 		5176E7832326795300E1946D /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5176E7732326795300E1946D /* Feather.ttf */; };
 		51B079FB2359C543005CD04E /* CVARootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B079FA2359C543005CD04E /* CVARootViewController.swift */; };
 		558F6F6FA7D2F32B354DACAD /* libPods-CVAReferenceApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F07B49EB86975B69C844F132 /* libPods-CVAReferenceApp-tvOSTests.a */; };
-		6F95DE01237D408D005B4BA8 /* CVAAdViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F95DE00237D408D005B4BA8 /* CVAAdViewManager.m */; };
-		6F95DE02237D408D005B4BA8 /* CVAAdViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F95DE00237D408D005B4BA8 /* CVAAdViewManager.m */; };
 		94469AF066B17FE2D7EAD20F /* libPods-CVAReferenceApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A75874EE6C7274FB7B238CDB /* libPods-CVAReferenceApp.a */; };
 		E98EDA83235D8C7900F37755 /* ConvivaIntegrationRefKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DF357D232018E700A1D2F6 /* ConvivaIntegrationRefKit.framework */; };
 		E98EDA84235D8C7900F37755 /* ConvivaIntegrationRefKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51DF357D232018E700A1D2F6 /* ConvivaIntegrationRefKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -170,8 +168,6 @@
 		51DF357D232018E700A1D2F6 /* ConvivaIntegrationRefKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ConvivaIntegrationRefKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D5C1B86A1BE8E4789C75D7 /* Pods-CVAReferenceApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAReferenceApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-CVAReferenceApp-tvOS/Pods-CVAReferenceApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		6F4ED8C0237AFA9800F49963 /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInteractiveMediaAds.framework; path = "Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework"; sourceTree = "<group>"; };
-		6F95DDFF237D408D005B4BA8 /* CVAAdViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CVAAdViewManager.h; sourceTree = "<group>"; };
-		6F95DE00237D408D005B4BA8 /* CVAAdViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CVAAdViewManager.m; sourceTree = "<group>"; };
 		A75874EE6C7274FB7B238CDB /* libPods-CVAReferenceApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CVAReferenceApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75C826EDADBA33817E95ADA /* Pods-CVAReferenceApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAReferenceApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-CVAReferenceApp-tvOSTests/Pods-CVAReferenceApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3816C778BA1AECA8EC41AFD /* Pods-CVAReferenceApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAReferenceApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-CVAReferenceApp-tvOS/Pods-CVAReferenceApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -372,8 +368,6 @@
 				5125E5502350A3C0000C1C5C /* CVAPlayerEventEmitter.swift */,
 				5125E54F2350A3C0000C1C5C /* CVAAVPlayerViewManager.h */,
 				5125E5532350A3C0000C1C5C /* CVAAVPlayerViewManager.m */,
-				6F95DDFF237D408D005B4BA8 /* CVAAdViewManager.h */,
-				6F95DE00237D408D005B4BA8 /* CVAAdViewManager.m */,
 				5125E5522350A3C0000C1C5C /* CVAPlayerHandler.h */,
 			);
 			name = NativeBridge;
@@ -829,7 +823,6 @@
 				5125E5562350A3C0000C1C5C /* CVAPlayerBridge.mm in Sources */,
 				5125E5572350A3C0000C1C5C /* CVAAVPlayerViewManager.m in Sources */,
 				5125E5542350A3C0000C1C5C /* CVAPlayerEventEmitter.m in Sources */,
-				6F95DE01237D408D005B4BA8 /* CVAAdViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,7 +832,6 @@
 			files = (
 				5125E5632350AC26000C1C5C /* CVAAppConstants.swift in Sources */,
 				5125E55F2350ABCF000C1C5C /* CVAPlayerBridge.mm in Sources */,
-				6F95DE02237D408D005B4BA8 /* CVAAdViewManager.m in Sources */,
 				5125E55E2350ABC4000C1C5C /* CVAPlayerEventEmitter.swift in Sources */,
 				5125E55D2350ABBE000C1C5C /* CVAPlayerEventEmitter.m in Sources */,
 				5125E5602350ABD3000C1C5C /* CVAAVPlayerViewManager.m in Sources */,

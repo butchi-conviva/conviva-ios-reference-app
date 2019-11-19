@@ -54,13 +54,10 @@ class CVAReactApp: NSObject {
     
     let playerViewMgr = self.reactBridge?.module(forName: "CVAPlayerView") as! CVAPlayerViewManager;
     
-    let adViewMgr = self.reactBridge?.module(forName: "CVAAdView") as! CVAAdViewManager;
-
     let playerEventManager =  CVAPlayerEventManager(eventEmitter:eventEmitter!);
     let playerManager = CVAPlayerManager(playerWithCmdHandler: avPlayer,
                                          playerEventManager:playerEventManager,
-                                         playerContentViewProvider:playerViewMgr as! CVAPlayerContentViewProvider, adViewProvider: adViewMgr as!  CVAAdViewProvider);
-    
+                                         playerContentViewProvider:playerViewMgr as! CVAPlayerContentViewProvider);
     
     if let _ = playerModule {
       playerModule?.reactBridge = self.reactBridge;
