@@ -51,6 +51,7 @@
 		5176E7832326795300E1946D /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5176E7732326795300E1946D /* Feather.ttf */; };
 		51B079FB2359C543005CD04E /* CVARootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B079FA2359C543005CD04E /* CVARootViewController.swift */; };
 		558F6F6FA7D2F32B354DACAD /* libPods-CVAReferenceApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F07B49EB86975B69C844F132 /* libPods-CVAReferenceApp-tvOSTests.a */; };
+		6FFB941323868A0C002D4159 /* JWPlayer_iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFB941223868A0B002D4159 /* JWPlayer_iOS_SDK.framework */; };
 		94469AF066B17FE2D7EAD20F /* libPods-CVAReferenceApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A75874EE6C7274FB7B238CDB /* libPods-CVAReferenceApp.a */; };
 		E98EDA83235D8C7900F37755 /* ConvivaIntegrationRefKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DF357D232018E700A1D2F6 /* ConvivaIntegrationRefKit.framework */; };
 		E98EDA84235D8C7900F37755 /* ConvivaIntegrationRefKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51DF357D232018E700A1D2F6 /* ConvivaIntegrationRefKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -168,6 +169,7 @@
 		51DF357D232018E700A1D2F6 /* ConvivaIntegrationRefKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ConvivaIntegrationRefKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D5C1B86A1BE8E4789C75D7 /* Pods-CVAReferenceApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAReferenceApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-CVAReferenceApp-tvOS/Pods-CVAReferenceApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		6F4ED8C0237AFA9800F49963 /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInteractiveMediaAds.framework; path = "Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework"; sourceTree = "<group>"; };
+		6FFB941223868A0B002D4159 /* JWPlayer_iOS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JWPlayer_iOS_SDK.framework; path = "Pods/JWPlayer-SDK/JWPlayer_iOS_SDK.framework"; sourceTree = "<group>"; };
 		A75874EE6C7274FB7B238CDB /* libPods-CVAReferenceApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CVAReferenceApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75C826EDADBA33817E95ADA /* Pods-CVAReferenceApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAReferenceApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-CVAReferenceApp-tvOSTests/Pods-CVAReferenceApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3816C778BA1AECA8EC41AFD /* Pods-CVAReferenceApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAReferenceApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-CVAReferenceApp-tvOS/Pods-CVAReferenceApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FFB941323868A0C002D4159 /* JWPlayer_iOS_SDK.framework in Frameworks */,
 				94469AF066B17FE2D7EAD20F /* libPods-CVAReferenceApp.a in Frameworks */,
 				E98EDA83235D8C7900F37755 /* ConvivaIntegrationRefKit.framework in Frameworks */,
 			);
@@ -294,6 +297,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6FFB941223868A0B002D4159 /* JWPlayer_iOS_SDK.framework */,
 				6F4ED8C0237AFA9800F49963 /* GoogleInteractiveMediaAds.framework */,
 				516C9FCC2355EA09007AA27A /* ConvivaIntegrationRefKit.framework */,
 				5125E5642350AEDD000C1C5C /* libPods-CVAReferenceApp-tvOS.a */,
@@ -669,10 +673,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CVAReferenceApp/Pods-CVAReferenceApp-frameworks.sh",
 				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework",
+				"${PODS_ROOT}/JWPlayer-SDK/JWPlayer_iOS_SDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWPlayer_iOS_SDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -953,7 +959,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = XKZH2TQ9WG;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Pods/GoogleAds-IMA-iOS-SDK";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Pods/GoogleAds-IMA-iOS-SDK",
+					"$(PROJECT_DIR)/Pods/JWPlayer-SDK",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -986,7 +995,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XKZH2TQ9WG;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Pods/GoogleAds-IMA-iOS-SDK";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Pods/GoogleAds-IMA-iOS-SDK",
+					"$(PROJECT_DIR)/Pods/JWPlayer-SDK",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",

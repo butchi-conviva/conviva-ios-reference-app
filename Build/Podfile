@@ -33,6 +33,7 @@ target 'CVAReferenceApp' do
 
   pod 'react-native-slider', :path => '../Source/conviva-react-native-refapp/node_modules/@react-native-community/slider'
   pod 'GoogleAds-IMA-iOS-SDK', '~> 3.7'
+  pod 'JWPlayer-SDK'
 
   target 'CVAReferenceAppTests' do
     inherit! :search_paths

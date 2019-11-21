@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftUI
+// import SwiftUI
 import ConvivaIntegrationRefKit_tvOS
 
 @UIApplicationMain

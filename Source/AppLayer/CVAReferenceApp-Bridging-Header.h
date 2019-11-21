@@ -10,3 +10,5 @@
 #import <React/RCTEventEmitter.h>
 #import "CVAPlayerBridge.h"
 #import "CVAAVPlayerViewManager.h"
+
+#import <JWPlayer_iOS_SDK/JWPlayerController.h>

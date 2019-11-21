@@ -31,6 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible();
         
         application.statusBarStyle = .lightContent;
+    JWPlayerController.setPlayerKey("3V7w4K0wAP88Jv3ERr7aLvbOTBZRtYu9i87mlgcD9OyZ1TnpMUlHFy5w5ji+6B3f")
+
         return true;
       }
       return false;
