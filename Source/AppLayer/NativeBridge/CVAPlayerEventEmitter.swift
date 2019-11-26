@@ -23,6 +23,8 @@ open class CVAPlayerEventEmitter: RCTEventEmitter {
             CVAPlayerEvent.onContentLoadDidFail.rawValue,
             CVAPlayerEvent.onContentPlayDidStart.rawValue,
             CVAPlayerEvent.onContentPlayDidFail.rawValue,
+            CVAPlayerEvent.onContentPlayDidPause.rawValue,
+            CVAPlayerEvent.onContentPlayDidPlay.rawValue,
             CVAPlayerEvent.onContentPlayDidFinish.rawValue,
             CVAPlayerEvent.onPlayHeadChange.rawValue,
             CVAPlayerEvent.onPlayerStateChange.rawValue,
