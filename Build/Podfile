@@ -32,7 +32,14 @@ target 'CVAReferenceApp' do
   pod 'RNGestureHandler', :path => '../Source/conviva-react-native-refapp/node_modules/react-native-gesture-handler'
 
   pod 'react-native-slider', :path => '../Source/conviva-react-native-refapp/node_modules/@react-native-community/slider'
+
+  pod 'RNCAsyncStorage', :path => '../Source/conviva-react-native-refapp/node_modules/@react-native-community/async-storage'
+
   pod 'GoogleAds-IMA-iOS-SDK', '~> 3.7'
+
+  pod 'react-native-config', :path => '../Source/conviva-react-native-refapp/node_modules/react-native-config'
+
+  pod 'OpenSSL-Universal'
 
   target 'CVAReferenceAppTests' do
     inherit! :search_paths
@@ -69,6 +76,11 @@ target 'CVAReferenceApp-tvOS' do
 
   pod 'RNGestureHandler', :path => '../Source/conviva-react-native-refapp/node_modules/react-native-gesture-handler'
 
+  pod 'RNCAsyncStorage', :path => '../Source/conviva-react-native-refapp/node_modules/@react-native-community/async-storage'
+
+  pod 'react-native-config', :path => '../Source/conviva-react-native-refapp/node_modules/react-native-config'
+
+  pod 'GoogleAds-IMA-tvOS-SDK', '~> 4.2'
 
   target 'CVAReferenceApp-tvOSTests' do
     inherit! :search_paths

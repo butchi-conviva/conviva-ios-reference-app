@@ -10,6 +10,7 @@
 		00E356F31AD99517003FC87E /* CVAReferenceAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CVAReferenceAppTests.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		410B176EE197AC5C6E7DABD0 /* libPods-CVAReferenceAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF40734C99A0D3248462E43B /* libPods-CVAReferenceAppTests.a */; };
 		510FBB872369A053005BC13C /* ConvivaIntegrationRefKit_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5125E53223509DDC000C1C5C /* ConvivaIntegrationRefKit_tvOS.framework */; };
 		510FBB882369A053005BC13C /* ConvivaIntegrationRefKit_tvOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5125E53223509DDC000C1C5C /* ConvivaIntegrationRefKit_tvOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5125E4E7235099D7000C1C5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5125E4E6235099D7000C1C5C /* AppDelegate.swift */; };
@@ -181,6 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				410B176EE197AC5C6E7DABD0 /* libPods-CVAReferenceAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +460,7 @@
 				5125E4E2235099D7000C1C5C /* Resources */,
 				5125E51223509C51000C1C5C /* Bundle React Native code and images */,
 				510FBB892369A053005BC13C /* Embed Frameworks */,
+				0A8A22573BF02D72BBB40DD5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -636,6 +639,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../Source/conviva-react-native-refapp/node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		0A8A22573BF02D72BBB40DD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CVAReferenceApp-tvOS/Pods-CVAReferenceApp-tvOS-frameworks.sh",
+				"${PODS_ROOT}/GoogleAds-IMA-tvOS-SDK/GoogleInteractiveMediaAds.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CVAReferenceApp-tvOS/Pods-CVAReferenceApp-tvOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		1309679BBF3BC6DD871A940C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -959,6 +980,9 @@
 					ENABLE_IOS_SDK,
 				);
 				INFOPLIST_FILE = CVAReferenceApp/Info.plist;
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
+				INFOPLIST_PREFIX_HEADER = "${BUILD_DIR}/GeneratedInfoPlistDotEnv.h";
+				INFOPLIST_PREPROCESS = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -993,6 +1017,9 @@
 					ENABLE_IOS_SDK,
 				);
 				INFOPLIST_FILE = CVAReferenceApp/Info.plist;
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
+				INFOPLIST_PREFIX_HEADER = "${BUILD_DIR}/GeneratedInfoPlistDotEnv.h";
+				INFOPLIST_PREPROCESS = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1039,7 +1066,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Debug;
 		};
@@ -1071,7 +1098,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Release;
 		};
