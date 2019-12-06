@@ -49,7 +49,7 @@ open class CVAPlayerEventEmitter: RCTEventEmitter {
     }
   }
   
-  override open static func requiresMainQueueSetup() -> Bool {
+  override public static func requiresMainQueueSetup() -> Bool {
     return true;
   }
 }
