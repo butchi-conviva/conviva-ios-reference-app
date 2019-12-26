@@ -5,9 +5,15 @@ require_relative '../Source/conviva-react-native-refapp/node_modules/@react-nati
 
 target 'CVAReferenceApp' do
   # Pods for CVAReferenceApp
+
+  pod 'FBLazyVector', :path => "../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/FBLazyVector"
+  pod 'FBReactNativeSpec', :path => "../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/FBReactNativeSpec"
+  pod 'RCTRequired', :path => "../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/RCTRequired"
+  pod 'RCTTypeSafety', :path => "../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/TypeSafety"
   pod 'React', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/'
-  pod 'React-Core', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/React'
-  pod 'React-DevSupport', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/React'
+  pod 'React-Core', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/'
+  pod 'React-CoreModules', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/React/CoreModules'
+  pod 'React-Core/DevSupport', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/'
   pod 'React-RCTActionSheet', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/ActionSheetIOS'
   pod 'React-RCTAnimation', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/NativeAnimation'
   pod 'React-RCTBlob', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/Blob'
@@ -17,28 +23,20 @@ target 'CVAReferenceApp' do
   pod 'React-RCTSettings', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/Settings'
   pod 'React-RCTText', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/Text'
   pod 'React-RCTVibration', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/Vibration'
-  pod 'React-RCTWebSocket', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/WebSocket'
-
   pod 'React-cxxreact', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/ReactCommon/cxxreact'
   pod 'React-jsi', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/ReactCommon/jsi'
   pod 'React-jsiexecutor', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/ReactCommon/jsiexecutor'
   pod 'React-jsinspector', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/ReactCommon/jsinspector'
-  pod 'yoga', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/ReactCommon/yoga'
-
+  pod 'ReactCommon/jscallinvoker', :path => "../Source/conviva-react-native-refapp/node_modules/react-native/ReactCommon"
+  pod 'ReactCommon/turbomodule/core', :path => "../Source/conviva-react-native-refapp/node_modules/react-native/ReactCommon"
+  pod 'Yoga', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/ReactCommon/yoga'
   pod 'DoubleConversion', :podspec => '../Source/conviva-react-native-refapp/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
-  #pod 'glog', :pod-spec => '../Source/conviva-react-native-refapp/node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../Source/conviva-react-native-refapp/node_modules/react-native/third-party-podspecs/Folly.podspec'
-
   pod 'RNGestureHandler', :path => '../Source/conviva-react-native-refapp/node_modules/react-native-gesture-handler'
-
   pod 'react-native-slider', :path => '../Source/conviva-react-native-refapp/node_modules/@react-native-community/slider'
-
   pod 'RNCAsyncStorage', :path => '../Source/conviva-react-native-refapp/node_modules/@react-native-community/async-storage'
-
   pod 'GoogleAds-IMA-iOS-SDK', '~> 3.7'
-
   pod 'react-native-config', :path => '../Source/conviva-react-native-refapp/node_modules/react-native-config'
-
   pod 'OpenSSL-Universal'
 
   target 'CVAReferenceAppTests' do
@@ -51,9 +49,14 @@ end
 target 'CVAReferenceApp-tvOS' do
   # Pods for CVAReferenceApp-tvOS
 
+	pod 'FBLazyVector', :path => "../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/FBLazyVector"
+  pod 'FBReactNativeSpec', :path => "../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/FBReactNativeSpec"
+  pod 'RCTRequired', :path => "../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/RCTRequired"
+  pod 'RCTTypeSafety', :path => "../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/TypeSafety"
   pod 'React', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/'
-  pod 'React-Core', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/React'
-  pod 'React-DevSupport', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/React'
+  pod 'React-Core', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/'
+  pod 'React-CoreModules', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/React/CoreModules'
+  pod 'React-Core/DevSupport', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/'
   pod 'React-RCTAnimation', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/NativeAnimation'
   pod 'React-RCTBlob', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/Blob'
   pod 'React-RCTImage', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/Image'
@@ -62,24 +65,18 @@ target 'CVAReferenceApp-tvOS' do
   pod 'React-RCTSettings', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/Settings'
   pod 'React-RCTText', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/Text'
   pod 'React-RCTVibration', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/Vibration'
-  pod 'React-RCTWebSocket', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/Libraries/WebSocket'
-
   pod 'React-cxxreact', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/ReactCommon/cxxreact'
   pod 'React-jsi', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/ReactCommon/jsi'
   pod 'React-jsiexecutor', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/ReactCommon/jsiexecutor'
   pod 'React-jsinspector', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/ReactCommon/jsinspector'
-  pod 'yoga', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/ReactCommon/yoga'
-
+  pod 'ReactCommon/jscallinvoker', :path => "../Source/conviva-react-native-refapp/node_modules/react-native/ReactCommon"
+  pod 'ReactCommon/turbomodule/core', :path => "../Source/conviva-react-native-refapp/node_modules/react-native/ReactCommon"
+  pod 'Yoga', :path => '../Source/conviva-react-native-refapp/node_modules/react-native/ReactCommon/yoga'
   pod 'DoubleConversion', :podspec => '../Source/conviva-react-native-refapp/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
-  #pod 'glog', :pod-spec => '../Source/conviva-react-native-refapp/node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../Source/conviva-react-native-refapp/node_modules/react-native/third-party-podspecs/Folly.podspec'
-
   pod 'RNGestureHandler', :path => '../Source/conviva-react-native-refapp/node_modules/react-native-gesture-handler'
-
   pod 'RNCAsyncStorage', :path => '../Source/conviva-react-native-refapp/node_modules/@react-native-community/async-storage'
-
   pod 'react-native-config', :path => '../Source/conviva-react-native-refapp/node_modules/react-native-config'
-
   pod 'GoogleAds-IMA-tvOS-SDK', '~> 4.2'
 
   target 'CVAReferenceApp-tvOSTests' do

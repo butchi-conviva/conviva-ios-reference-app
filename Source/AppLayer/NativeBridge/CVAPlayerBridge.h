@@ -18,4 +18,6 @@
 
 -(void) unRegisterHandler:(CVAPlayerHandler)playerHandler;
 
+-(void) handleEvent:(NSString *)eventName info:(NSDictionary *)info;
+
 @end
