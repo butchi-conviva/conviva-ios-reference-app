@@ -16,10 +16,11 @@ import CoreTelephony
 import ConvivaIntegrationRefKit_tvOS
 #endif
 
-class CVAReactApp: NSObject {
+@objc public final class CVAReactApp: NSObject {
   
-  static let shared:CVAReactApp = CVAReactApp();
-  private(set) var reactBridge:RCTBridge? = nil;
+  @objc public static let shared:CVAReactApp = CVAReactApp();
+  @objc public  var reactBridge:RCTBridge? = nil;
+  @objc public  var playerModule:CVAPlayerBridge? = nil;
   
   private override init() {
     
@@ -38,17 +39,18 @@ class CVAReactApp: NSObject {
       
       rootView = RCTRootView(bridge: self.reactBridge!, moduleName: "CVAReferenceApp", initialProperties: nil);
       rootView?.backgroundColor = UIColor.white;
-      
-    }
     
+    }
+   
     return rootView;
   }
+  
   
   private func configureBridge(bridge:RCTBridge) -> Bool{
     
     var status:Bool = false;
     
-    let playerModule = bridge.module(for: CVAPlayerBridge.self) as? CVAPlayerBridge;
+    self.playerModule = bridge.module(for: CVAPlayerBridge.self) as? CVAPlayerBridge;
     let eventEmitter = bridge.module(for: CVAPlayerEventEmitter.self) as? CVAPlayerEventEmitter;
     
     let avPlayer = CVAAVPlayer();
@@ -63,7 +65,8 @@ class CVAReactApp: NSObject {
     let playerManager = CVAPlayerManager(playerWithCmdHandler : avPlayer,
                                          adCommandHandler     : googleIMAHandler,
                                          playerEventManager   : playerEventManager,
-                                         playerContentViewProvider:playerViewMgr as! CVAPlayerContentViewProvider, playerMgr: playerEventsManager, adMgr: adEventManager);
+                                         playerContentViewProvider:playerViewMgr as! CVAPlayerContentViewProvider,
+                                         playerMgr: playerEventsManager, adMgr: adEventManager);
     
     if let _ = playerModule {
       playerModule?.reactBridge = self.reactBridge;
@@ -77,11 +80,16 @@ class CVAReactApp: NSObject {
 
 extension CVAReactApp : RCTBridgeDelegate {
   
-  func sourceURL(for bridge: RCTBridge!) -> URL! {
+  public func  sourceURL(for bridge: RCTBridge!) -> URL! {
+    
+    let url:URL?;
+    
     #if DEBUG
-      return RCTBundleURLProvider.sharedSettings()?.jsBundleURL(forBundleRoot: "index", fallbackResource: nil);
+      url = RCTBundleURLProvider.sharedSettings()?.jsBundleURL(forBundleRoot: "index", fallbackResource: nil);
     #else
-      return Bundle.main.url(forResource: "main", withExtension: "jsbundle");
+      url = Bundle.main.url(forResource: "main", withExtension: "jsbundle");
     #endif
+    
+    return url;
   }
 }

@@ -11,6 +11,11 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		410B176EE197AC5C6E7DABD0 /* libPods-CVAReferenceAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF40734C99A0D3248462E43B /* libPods-CVAReferenceAppTests.a */; };
+		5103C42223ABDFFD00F4CB06 /* CVASliderViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5103C42023ABDFFD00F4CB06 /* CVASliderViewManager.m */; };
+		5103C42923ABE2A800F4CB06 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5103C42423ABE2A800F4CB06 /* LICENSE */; };
+		5103C42A23ABE2A800F4CB06 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5103C42523ABE2A800F4CB06 /* README.md */; };
+		5103C42B23ABE2A800F4CB06 /* TvOSSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5103C42723ABE2A800F4CB06 /* TvOSSlider.swift */; };
+		5103C42C23ABE2A800F4CB06 /* DPadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5103C42823ABE2A800F4CB06 /* DPadState.swift */; };
 		510FBB872369A053005BC13C /* ConvivaIntegrationRefKit_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5125E53223509DDC000C1C5C /* ConvivaIntegrationRefKit_tvOS.framework */; };
 		510FBB882369A053005BC13C /* ConvivaIntegrationRefKit_tvOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5125E53223509DDC000C1C5C /* ConvivaIntegrationRefKit_tvOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5125E4E7235099D7000C1C5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5125E4E6235099D7000C1C5C /* AppDelegate.swift */; };
@@ -120,6 +125,12 @@
 		2EBA9C7BDFB99EC31A823EE4 /* Pods-CVAReferenceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAReferenceApp.debug.xcconfig"; path = "Target Support Files/Pods-CVAReferenceApp/Pods-CVAReferenceApp.debug.xcconfig"; sourceTree = "<group>"; };
 		44EA0FC404BFB6DE6918F08B /* Pods-CVAReferenceApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAReferenceApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-CVAReferenceApp-tvOSTests/Pods-CVAReferenceApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		50E8776617BED577B332C902 /* Pods-CVAReferenceAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVAReferenceAppTests.debug.xcconfig"; path = "Target Support Files/Pods-CVAReferenceAppTests/Pods-CVAReferenceAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5103C42023ABDFFD00F4CB06 /* CVASliderViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVASliderViewManager.m; sourceTree = "<group>"; };
+		5103C42123ABDFFD00F4CB06 /* CVASliderViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVASliderViewManager.h; sourceTree = "<group>"; };
+		5103C42423ABE2A800F4CB06 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5103C42523ABE2A800F4CB06 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5103C42723ABE2A800F4CB06 /* TvOSSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvOSSlider.swift; sourceTree = "<group>"; };
+		5103C42823ABE2A800F4CB06 /* DPadState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPadState.swift; sourceTree = "<group>"; };
 		5125E4E4235099D7000C1C5C /* CVAReferenceApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CVAReferenceApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5125E4E6235099D7000C1C5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5125E4EA235099D9000C1C5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -311,6 +322,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5103C42323ABE2A800F4CB06 /* TvOSSlider */ = {
+			isa = PBXGroup;
+			children = (
+				5103C42423ABE2A800F4CB06 /* LICENSE */,
+				5103C42523ABE2A800F4CB06 /* README.md */,
+				5103C42623ABE2A800F4CB06 /* TvOSSlider */,
+			);
+			name = TvOSSlider;
+			path = ../Source/AppLayer/TvOSSlider;
+			sourceTree = "<group>";
+		};
+		5103C42623ABE2A800F4CB06 /* TvOSSlider */ = {
+			isa = PBXGroup;
+			children = (
+				5103C42723ABE2A800F4CB06 /* TvOSSlider.swift */,
+				5103C42823ABE2A800F4CB06 /* DPadState.swift */,
+				5103C42123ABDFFD00F4CB06 /* CVASliderViewManager.h */,
+				5103C42023ABDFFD00F4CB06 /* CVASliderViewManager.m */,
+			);
+			path = TvOSSlider;
+			sourceTree = "<group>";
+		};
 		5125E4E5235099D7000C1C5C /* CVAReferenceApp-tvOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +385,7 @@
 		5125E5492350A39E000C1C5C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5103C42323ABE2A800F4CB06 /* TvOSSlider */,
 				5125E55A2350A43F000C1C5C /* CVAReactApp.swift */,
 				5125E5612350AC26000C1C5C /* CVAAppConstants.swift */,
 				5125E54C2350A3C0000C1C5C /* NativeBridge */,
@@ -605,6 +639,8 @@
 			files = (
 				5125E4F1235099D9000C1C5C /* LaunchScreen.storyboard in Resources */,
 				5125E4EE235099D9000C1C5C /* Preview Assets.xcassets in Resources */,
+				5103C42A23ABE2A800F4CB06 /* README.md in Resources */,
+				5103C42923ABE2A800F4CB06 /* LICENSE in Resources */,
 				5125E4EB235099D9000C1C5C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -853,7 +889,10 @@
 				5125E55F2350ABCF000C1C5C /* CVAPlayerBridge.mm in Sources */,
 				5125E55E2350ABC4000C1C5C /* CVAPlayerEventEmitter.swift in Sources */,
 				5125E55D2350ABBE000C1C5C /* CVAPlayerEventEmitter.m in Sources */,
+				5103C42C23ABE2A800F4CB06 /* DPadState.swift in Sources */,
+				5103C42223ABDFFD00F4CB06 /* CVASliderViewManager.m in Sources */,
 				5125E5602350ABD3000C1C5C /* CVAAVPlayerViewManager.m in Sources */,
+				5103C42B23ABE2A800F4CB06 /* TvOSSlider.swift in Sources */,
 				5125E55C2350A43F000C1C5C /* CVAReactApp.swift in Sources */,
 				5125E4E7235099D7000C1C5C /* AppDelegate.swift in Sources */,
 			);
