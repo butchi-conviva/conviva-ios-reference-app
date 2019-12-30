@@ -1,14 +1,18 @@
 {
   "images" : [
     {
-      "idiom" : "tv",
+      "idiom" : "universal",
       "filename" : "400x240.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "tv",
+      "idiom" : "universal",
       "filename" : "800x480.png",
       "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
