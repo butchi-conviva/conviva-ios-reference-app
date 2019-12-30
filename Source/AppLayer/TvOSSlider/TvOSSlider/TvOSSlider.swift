@@ -29,6 +29,7 @@ private let fineTunningVelocityThreshold: Float = 600
 @objc public final class TvOSSlider: UIControl {
     
     // MARK: - Public
+  @objc public var eventDelegate:TvOSSliderEvents?
     
     /// The slider’s current value.
     @IBInspectable
@@ -463,6 +464,7 @@ private let fineTunningVelocityThreshold: Float = 600
         case .began:
             stopDeceleratingTimer()
             thumbViewCenterXConstraintConstant = Float(thumbViewCenterXConstraint.constant)
+            self.eventDelegate?.onSeekStart(value: self.value);
         case .changed:
             let centerX = thumbViewCenterXConstraintConstant + translation / 5
             let percent = centerX / Float(trackView.frame.width)
@@ -470,6 +472,7 @@ private let fineTunningVelocityThreshold: Float = 600
             if isContinuous {
                 sendActions(for: .valueChanged)
             }
+          self.eventDelegate?.onSeekValueChange(value: self.value);
         case .ended, .cancelled:
             thumbViewCenterXConstraintConstant = Float(thumbViewCenterXConstraint.constant)
             
@@ -481,6 +484,7 @@ private let fineTunningVelocityThreshold: Float = 600
             else {
                 stopDeceleratingTimer()
             }
+          self.eventDelegate?.onSeekEnd(value: self.value);
         default:
             break
         }

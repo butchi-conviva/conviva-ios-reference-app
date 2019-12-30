@@ -37,6 +37,7 @@
 		5125E5622350AC26000C1C5C /* CVAAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5125E5612350AC26000C1C5C /* CVAAppConstants.swift */; };
 		5125E5632350AC26000C1C5C /* CVAAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5125E5612350AC26000C1C5C /* CVAAppConstants.swift */; };
 		5125E5652350AEDD000C1C5C /* libPods-CVAReferenceApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5125E5642350AEDD000C1C5C /* libPods-CVAReferenceApp-tvOS.a */; };
+		512B4B6B23B9C9E7003A8ACD /* TvOSSliderEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512B4B6A23B9C9E7003A8ACD /* TvOSSliderEvents.swift */; };
 		5176E73F2326660300E1946D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5176E7362326660300E1946D /* AppDelegate.swift */; };
 		5176E7742326795300E1946D /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5176E7642326795300E1946D /* SimpleLineIcons.ttf */; };
 		5176E7752326795300E1946D /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5176E7652326795300E1946D /* Zocial.ttf */; };
@@ -155,6 +156,7 @@
 		5125E55A2350A43F000C1C5C /* CVAReactApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CVAReactApp.swift; path = ../Source/AppLayer/CVAReactApp.swift; sourceTree = "<group>"; };
 		5125E5612350AC26000C1C5C /* CVAAppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CVAAppConstants.swift; path = ../Source/AppLayer/CVAAppConstants.swift; sourceTree = "<group>"; };
 		5125E5642350AEDD000C1C5C /* libPods-CVAReferenceApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-CVAReferenceApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		512B4B6A23B9C9E7003A8ACD /* TvOSSliderEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvOSSliderEvents.swift; sourceTree = "<group>"; };
 		513DFAC1231FECD700F30511 /* ConvivaMediaPlayerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ConvivaMediaPlayerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		516C9FCC2355EA09007AA27A /* ConvivaIntegrationRefKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ConvivaIntegrationRefKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5176E7352326660300E1946D /* CVAReferenceApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CVAReferenceApp-Bridging-Header.h"; path = "../Source/AppLayer/CVAReferenceApp-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -340,6 +342,7 @@
 				5103C42823ABE2A800F4CB06 /* DPadState.swift */,
 				5103C42123ABDFFD00F4CB06 /* CVASliderViewManager.h */,
 				5103C42023ABDFFD00F4CB06 /* CVASliderViewManager.m */,
+				512B4B6A23B9C9E7003A8ACD /* TvOSSliderEvents.swift */,
 			);
 			path = TvOSSlider;
 			sourceTree = "<group>";
@@ -895,6 +898,7 @@
 				5103C42B23ABE2A800F4CB06 /* TvOSSlider.swift in Sources */,
 				5125E55C2350A43F000C1C5C /* CVAReactApp.swift in Sources */,
 				5125E4E7235099D7000C1C5C /* AppDelegate.swift in Sources */,
+				512B4B6B23B9C9E7003A8ACD /* TvOSSliderEvents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

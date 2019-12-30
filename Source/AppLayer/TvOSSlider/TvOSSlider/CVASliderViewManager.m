@@ -15,7 +15,11 @@
     #import <ConvivaIntegrationRefKit/ConvivaIntegrationRefKit-Swift.h>
 #endif
 
-@interface CVASliderViewManager()
+NSString *const kEventSeekStart = @"seekStart";
+NSString *const kEventSeekValueChange = @"seekValueChange";
+NSString *const kEventSeekEnd = @"seekEnd";
+
+@interface CVASliderViewManager()<TvOSSliderEvents>
 
 @property (nonatomic,readwrite) UIView *sliderView;
 
@@ -42,22 +46,40 @@ RCT_EXPORT_MODULE(CVASliderView)
   sliderView.isContinuous = false;
   
   sliderView.minimumTrackTintColor = UIColor.redColor;
+  sliderView.eventDelegate = self;
   self.sliderView = sliderView;
-  
-  [sliderView addTarget:self action:@selector(onSliderValueChange:) forControlEvents:UIControlEventValueChanged];
-  
+    
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveProgressNotification:) name:@"PlaybackProgress" object:nil];
   
   return self.sliderView;
                               
 }
 
-- (void) onSliderValueChange:(TvOSSlider*) slider {
+- (void)onSeekStartWithValue:(float)value {
+   
+  //NSLog(@"TvOSSlider:: onSeekStartWithValue");
+  
+  [self handleSeekEvent:kEventSeekStart value:value];
+}
+
+- (void)onSeekValueChangeWithValue:(float)value {
+  
+   //NSLog(@"TvOSSlider:: onSeekValueChangeWithValue");
+  
+  [self handleSeekEvent:kEventSeekValueChange value:value];
+}
+
+- (void)onSeekEndWithValue:(float)value {
+  
+   //NSLog(@"TvOSSlider:: onSeekEndWithValue");
+  
+  [self handleSeekEvent:kEventSeekEnd value:value];
+}
+
+-(void) handleSeekEvent:(NSString*)event value:(float)value {
   
   CVAReactApp *reactApp = [CVAReactApp shared];
-  float value = ((TvOSSlider*)self.sliderView).value;
-  [reactApp.playerModule handleEvent:@"seek" info:@{@"value":[NSNumber numberWithFloat:value]}];
-                                                    
+  [reactApp.playerModule handleEvent:event info:@{@"value":[NSNumber numberWithFloat:value]}];
 }
 
 
