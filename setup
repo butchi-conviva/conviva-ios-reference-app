@@ -1,0 +1,10 @@
+git checkout release/angelfish
+git submodule update --init --recursive --progress
+cd Source/conviva-react-native-refapp/
+git checkout release/angelfish
+npm i
+cd ../conviva-ios-integration-refkit/Build/
+git checkout release/angelfish
+pod install
+cd ../../../Build/
+pod install
