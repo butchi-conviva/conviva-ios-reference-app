@@ -8,3 +8,4 @@ git checkout release/angelfish
 pod install
 cd ../../../Build/
 pod install
+open Build/CVAReferenceApp.xcworkspace/ 
