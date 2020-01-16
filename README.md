@@ -18,10 +18,7 @@ Please follow the instructions for iOS [Setup guide](https://facebook.github.io/
 - cd Source/conviva-react-native-refapp 
 - nmp i
 - cd ../../Build/
-- pod install
+- pod install 
 - open Build/CVAReferenceApp.xcworkspace
 - Build and Run the app using xcode
-
-
-
  
