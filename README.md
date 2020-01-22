@@ -21,4 +21,6 @@ Please follow the instructions for iOS [Setup guide](https://facebook.github.io/
 - pod install 
 - open Build/CVAReferenceApp.xcworkspace
 - Build and Run the app using xcode
+
+All set!
  
