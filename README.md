@@ -22,6 +22,8 @@ Please follow the instructions for iOS [Setup guide](https://facebook.github.io/
 - open Build/CVAReferenceApp.xcworkspace
 - Build and Run the app using xcode
 
+Completed.
+
 
 
  
